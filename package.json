@@ -1,0 +1,16 @@
+{
+  "name": "@welib/cctd",
+  "version": "0.0.1",
+  "description": "client certificate test daemon",
+  "type": "module",
+  "bin": "./bin/cctd.js",
+  "exports": {
+    "./config": "./src/config.js"
+  },
+  "scripts": {
+    "test": "echo no tests defined"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
