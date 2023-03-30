@@ -7,10 +7,10 @@ const httpsOpts = {requestCert: true, rejectUnauthorized: false};
 const server = https.createServer({...config.tls, ...httpsOpts}, app);
 
 app.get("/", (req, res) => {
-  res.send('<a href="/login">Login</a>');
+  res.send('<a href="/cert">Client Certificate</a>');
 });
 
-app.get("/login", (req, res) => {
+app.get("/cert", (req, res) => {
   const cert = req.connection.getPeerCertificate();
 
   if (req.client.authorized) {
