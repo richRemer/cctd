@@ -1,0 +1,7 @@
+{
+  "tls": {
+    "cert": "/tls/example.com.crt",
+    "cert": "/tls/example.com.key",
+    "pfx": "/tls/example.com.pfx"
+  }
+}

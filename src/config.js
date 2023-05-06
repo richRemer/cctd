@@ -10,6 +10,3 @@ export const tls = config.tls || {};
 if (tls.cert) tls.cert = readFileSync(tls.cert);
 if (tls.key) tls.key = readFileSync(tls.key);
 if (tls.pfx) tls.pfx = readFileSync(tls.pfx);
-
-if (tls.ca instanceof Array) tls.ca = tls.ca.map(readFileSync);
-else if (tls.ca) tls.ca = readFileSync(tls.ca);
