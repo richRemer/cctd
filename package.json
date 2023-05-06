@@ -1,6 +1,6 @@
 {
   "name": "@welib/cctd",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "client certificate test daemon",
   "type": "module",
   "bin": "./bin/cctd.js",
